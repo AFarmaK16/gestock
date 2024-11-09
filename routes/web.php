@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\GesController;
+use App\Http\Controllers\GeStockController;
 
 
 
