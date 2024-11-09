@@ -30,4 +30,4 @@ Route::get('articles/{article}/edit', [GeStockController::class, 'edit'])->name(
 
 Route::put('articles/{article}', [GeStockController::class, 'update'])->name('articles.update');
 
-Route::delete('articles/{article}', [GeStockController::class, 'destroy'])->name('articles.destroy');
+Route::delete('articles/{article}', [GeStockController::class, 'delete'])->name('articles.delete');

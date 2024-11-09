@@ -31,7 +31,7 @@ class GeStockController extends Controller
 
     public function edit(Article $article)
     {
-        return view('articles.edit', compact('souvenir'));
+        return view('articles.edit', compact('article'));
     }
 
     public function update(Request $request, Article $article)
@@ -46,7 +46,7 @@ class GeStockController extends Controller
         return redirect()->route('articles.index')->with('success', 'Article mis à jour avec succès');
     }
     
-    public function destroy(Article $article)
+    public function delete(Article $article)
     {
         $article->delete();
     
