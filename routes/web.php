@@ -20,14 +20,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('articles', [GesController::class, 'index'])->name('articles.index');
+Route::get('articles', [GeStockController::class, 'index'])->name('articles.index');
 
-Route::get('articles/create', [GesController::class, 'create'])->name('articles.create');
+Route::get('articles/create', [GeStockController::class, 'create'])->name('articles.create');
 
-Route::post('articles', [GesController::class, 'store'])->name('articles.store');
+Route::post('articles', [GeStockController::class, 'store'])->name('articles.store');
 
-Route::get('articles/{article}/edit', [GesController::class, 'edit'])->name('articles.edit');
+Route::get('articles/{article}/edit', [GeStockController::class, 'edit'])->name('articles.edit');
 
-Route::put('articles/{article}', [GesController::class, 'update'])->name('articles.update');
+Route::put('articles/{article}', [GeStockController::class, 'update'])->name('articles.update');
 
-Route::delete('articles/{article}', [GesController::class, 'destroy'])->name('articles.destroy');
+Route::delete('articles/{article}', [GeStockController::class, 'destroy'])->name('articles.destroy');
