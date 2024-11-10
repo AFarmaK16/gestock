@@ -31,3 +31,5 @@ Route::get('articles/{article}/edit', [GeStockController::class, 'edit'])->name(
 Route::put('articles/{article}', [GeStockController::class, 'update'])->name('articles.update');
 
 Route::delete('articles/{article}', [GeStockController::class, 'delete'])->name('articles.delete');
+
+Route::get('articles/category/{category}', [GeStockController::class, 'articlesByCategory'])->name('articles.byCategory');
